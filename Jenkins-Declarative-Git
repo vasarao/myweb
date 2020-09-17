@@ -3,6 +3,9 @@
 pipeline{
     agent any
     
+    environment{
+        export PATH=$M2:$PATH
+    }
    
     stages{
         stage("Git Checkout"){
