@@ -4,7 +4,7 @@ pipeline{
     agent any
     
     environment{
-        export PATH=$M2:$PATH
+        PATH = "/opt/apache-maven-3.6.3/bin:$PATH"
     }
    
     stages{
