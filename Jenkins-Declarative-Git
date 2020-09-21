@@ -15,7 +15,7 @@ pipeline{
                 git credentialsId: 'jenkins', url: 'https://github.com/vasarao/myweb.git'
             }
         }
-        stage("Maven Build){
+        stage("Maven Build"){
           steps{
             sh "mvn clean package"
              }
